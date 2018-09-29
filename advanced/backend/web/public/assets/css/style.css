@@ -1,0 +1,221 @@
+.sep-top {
+	margin-top: 20px;
+}
+
+
+.pre-image{
+	border: 1px solid #CCC;
+	padding: 2px;
+	display: inline-block;
+	margin: 4px;
+}
+
+
+.sClass{
+	text-align: center;
+}
+
+.modal-dialog{
+	width:720px;
+}
+
+.note-editor .btn-default {
+    color: #333 !important;
+    background-color: #fff !important;
+    border-color: #ccc !important;
+}
+
+.note-editor .btn{
+	text-shadow: 0 -1px 0 rgba(0,0,0,0) !important;
+	display: inline-block;
+	margin-bottom: 0;
+	font-weight: normal;
+	text-align: center;
+	vertical-align: middle;
+	touch-action: manipulation;
+	cursor: pointer;
+	background-image: none;
+	border: 1px solid transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+	white-space: nowrap;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+.red {
+	color: red;
+}
+
+.note-editor .btn-group + .btn-sm,.note-editor .btn-group > .btn-sm {
+    border-width: 1px;
+}
+
+.layer-dialog{
+	padding:10px 20px;
+}
+
+.layer-dialog .modal-body{
+	padding-bottom: 80px;
+}
+
+.layer-dialog .modal-content{
+	border: none;
+}
+
+
+.layer-dialog .modal-footer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+.layer-dialog .col-sm-1 {
+    width: 10%;
+}
+.layer-dialog .col-sm-2 {
+    width: 16%;
+}
+.layer-dialog .col-sm-3 {
+    width: 25%;
+}
+.layer-dialog .col-sm-4 {
+    width: 35%;
+}
+.layer-dialog .col-sm-5 {
+    width: 42%;
+}
+.layer-dialog .col-sm-6 {
+    width: 50%;
+}
+.layer-dialog .col-sm-7 {
+    width: 58%;
+}
+.layer-dialog .col-sm-8 {
+    width: 65%;
+}
+.layer-dialog .col-sm-9 {
+    width: 75%;
+}
+.layer-dialog .col-sm-10 {
+    width: 84%;
+}
+.layer-dialog .col-sm-11 {
+    width: 90%;
+}
+
+.layer-dialog .modal-content .form-group{
+	
+}
+
+.layer-dialog .modal-content .form-group label.control-label{
+	height: 34px;
+	padding-right:30px;
+}
+
+.col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9 {
+    float: left;
+}
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9{
+	padding-left: 12px;
+}
+.col_content{
+	min-height: 42px;
+    padding: 4px 0; 
+}
+.form-horizontal .control-label{
+	text-align: right;
+}
+
+.layer-dialog .form-group::before{
+	display: none;
+}
+.layer-dialog .form-group::after{
+	display: none;
+}
+
+.note-popover.popover{
+	z-index: 9999;
+}
+
+.prev_image{
+	max-width:120px;
+	padding: 2px;
+	cursor: pointer;
+}
+
+.detail-view  tbody  th{
+	text-align: right; 
+	vertical-align: middle;
+}
+
+.detail-show tbody th,.detail-show  tbody  td{
+	text-align: center; 
+	vertical-align: middle;
+}
+
+/*初始化样式*/
+.star_evaluate {
+    position: relative;
+    width: 100px;
+    height: 20px;
+    background: url("images/icon-star-default.png") repeat-x;
+    background-size: 20px 20px;
+    overflow: hidden;
+}
+
+.star {
+    display: block;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    z-index: 2;
+}
+
+.star_1 {
+    left: 0;
+}
+
+.star_2 {
+    left: 20px;
+}
+
+.star_3 {
+    left: 40px;
+}
+
+.star_4 {
+    left: 60px;
+}
+
+.star_5 {
+    left: 80px;
+}
+
+/*鼠标悬浮*/
+.star_evaluate .checked {
+    background: url("images/icon-star-active.png") repeat-x;
+    background-size: 20px 20px;
+    z-index: 1;
+}
+
+.form-group .chosen-container-single .chosen-single{
+	border: 1px solid #d5d5d5;
+}
+
+.form-group .chosen-container-active.chosen-with-drop .chosen-single{
+	background:#fff;
+	border-color: #4492C9;
+}
+select[readonly] {
+	background: #eee;
+	cursor: no-drop;
+}
+ 
+select[readonly] option {
+	display: none;
+}

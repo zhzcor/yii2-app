@@ -1,0 +1,896 @@
+2018-09-03 15:05:32 [127.0.0.1][2][g6ofqt5fqm7081qg34ke267q20][error][yii\db\Exception] PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'testbendi.hc_wallet' doesn't exist in D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Command.php:1258
+Stack trace:
+#0 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Command.php(1258): PDOStatement->execute()
+#1 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Command.php(1148): yii\db\Command->internalExecute('SELECT COUNT(*)...')
+#2 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Command.php(425): yii\db\Command->queryInternal('fetchColumn', 0)
+#3 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Query.php(463): yii\db\Command->queryScalar()
+#4 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(340): yii\db\Query->queryScalar('COUNT(*)', Object(yii\db\Connection))
+#5 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Query.php(347): yii\db\ActiveQuery->queryScalar('COUNT(*)', Object(yii\db\Connection))
+#6 D:\www\yii2test\advanced\backend\controllers\Controller.php(154): yii\db\Query->count()
+#7 [internal function]: backend\controllers\Controller->actionSearch()
+#8 D:\www\yii2test\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 D:\www\yii2test\advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 D:\www\yii2test\advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('search', Array)
+#11 D:\www\yii2test\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/search', Array)
+#12 D:\www\yii2test\advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 D:\www\yii2test\advanced\backend\web\index.php(20): yii\base\Application->run()
+#14 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'testbendi.hc_wallet' doesn't exist
+The SQL being executed was: SELECT COUNT(*) FROM `hc_user` `u` INNER JOIN `hc_wallet` `w` ON u.id=w.user_id in D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Schema.php:664
+Stack trace:
+#0 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Command.php(1148): yii\db\Command->internalExecute('SELECT COUNT(*)...')
+#2 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Command.php(425): yii\db\Command->queryInternal('fetchColumn', 0)
+#3 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Query.php(463): yii\db\Command->queryScalar()
+#4 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(340): yii\db\Query->queryScalar('COUNT(*)', Object(yii\db\Connection))
+#5 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Query.php(347): yii\db\ActiveQuery->queryScalar('COUNT(*)', Object(yii\db\Connection))
+#6 D:\www\yii2test\advanced\backend\controllers\Controller.php(154): yii\db\Query->count()
+#7 [internal function]: backend\controllers\Controller->actionSearch()
+#8 D:\www\yii2test\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 D:\www\yii2test\advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 D:\www\yii2test\advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('search', Array)
+#11 D:\www\yii2test\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/search', Array)
+#12 D:\www\yii2test\advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 D:\www\yii2test\advanced\backend\web\index.php(20): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'testbendi.hc_wallet' doesn't exist
+)
+
+2018-09-03 15:05:32 [127.0.0.1][2][g6ofqt5fqm7081qg34ke267q20][error][yii\db\Exception] yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'testbendi.hc_wallet' doesn't exist
+The SQL being executed was: SELECT COUNT(*) FROM `hc_user` `u` INNER JOIN `hc_wallet` `w` ON u.id=w.user_id in D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Schema.php:664
+Stack trace:
+#0 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Command.php(1148): yii\db\Command->internalExecute('SELECT COUNT(*)...')
+#2 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Command.php(425): yii\db\Command->queryInternal('fetchColumn', 0)
+#3 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Query.php(463): yii\db\Command->queryScalar()
+#4 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(340): yii\db\Query->queryScalar('COUNT(*)', Object(yii\db\Connection))
+#5 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Query.php(347): yii\db\ActiveQuery->queryScalar('COUNT(*)', Object(yii\db\Connection))
+#6 D:\www\yii2test\advanced\backend\controllers\Controller.php(154): yii\db\Query->count()
+#7 [internal function]: backend\controllers\Controller->actionSearch()
+#8 D:\www\yii2test\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 D:\www\yii2test\advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 D:\www\yii2test\advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('search', Array)
+#11 D:\www\yii2test\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/search', Array)
+#12 D:\www\yii2test\advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 D:\www\yii2test\advanced\backend\web\index.php(20): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'testbendi.hc_wallet' doesn't exist
+)
+
+2018-09-03 15:05:31 [127.0.0.1][2][g6ofqt5fqm7081qg34ke267q20][info][application] $_GET = []
+
+$_POST = [
+    'sEcho' => '1'
+    'iColumns' => '14'
+    'sColumns' => ',id,avatar,telephone,nickname,sex,money,costed_at,password,repassword,status,created_at,updated_at,'
+    'iDisplayStart' => '0'
+    'iDisplayLength' => '10'
+    'mDataProp_0' => ''
+    'sSearch_0' => ''
+    'bRegex_0' => 'false'
+    'bSearchable_0' => 'true'
+    'bSortable_0' => 'false'
+    'mDataProp_1' => 'id'
+    'sSearch_1' => ''
+    'bRegex_1' => 'false'
+    'bSearchable_1' => 'true'
+    'bSortable_1' => 'true'
+    'mDataProp_2' => 'avatar'
+    'sSearch_2' => ''
+    'bRegex_2' => 'false'
+    'bSearchable_2' => 'true'
+    'bSortable_2' => 'true'
+    'mDataProp_3' => 'telephone'
+    'sSearch_3' => ''
+    'bRegex_3' => 'false'
+    'bSearchable_3' => 'true'
+    'bSortable_3' => 'false'
+    'mDataProp_4' => 'nickname'
+    'sSearch_4' => ''
+    'bRegex_4' => 'false'
+    'bSearchable_4' => 'true'
+    'bSortable_4' => 'false'
+    'mDataProp_5' => 'sex'
+    'sSearch_5' => ''
+    'bRegex_5' => 'false'
+    'bSearchable_5' => 'true'
+    'bSortable_5' => 'false'
+    'mDataProp_6' => 'money'
+    'sSearch_6' => ''
+    'bRegex_6' => 'false'
+    'bSearchable_6' => 'true'
+    'bSortable_6' => 'false'
+    'mDataProp_7' => 'costed_at'
+    'sSearch_7' => ''
+    'bRegex_7' => 'false'
+    'bSearchable_7' => 'true'
+    'bSortable_7' => 'false'
+    'mDataProp_8' => 'password'
+    'sSearch_8' => ''
+    'bRegex_8' => 'false'
+    'bSearchable_8' => 'true'
+    'bSortable_8' => 'false'
+    'mDataProp_9' => 'repassword'
+    'sSearch_9' => ''
+    'bRegex_9' => 'false'
+    'bSearchable_9' => 'true'
+    'bSortable_9' => 'false'
+    'mDataProp_10' => 'status'
+    'sSearch_10' => ''
+    'bRegex_10' => 'false'
+    'bSearchable_10' => 'true'
+    'bSortable_10' => 'false'
+    'mDataProp_11' => 'created_at'
+    'sSearch_11' => ''
+    'bRegex_11' => 'false'
+    'bSearchable_11' => 'true'
+    'bSortable_11' => 'true'
+    'mDataProp_12' => 'updated_at'
+    'sSearch_12' => ''
+    'bRegex_12' => 'false'
+    'bSearchable_12' => 'true'
+    'bSortable_12' => 'true'
+    'mDataProp_13' => ''
+    'sSearch_13' => ''
+    'bRegex_13' => 'false'
+    'bSearchable_13' => 'true'
+    'bSortable_13' => 'false'
+    'sSearch' => ''
+    'bRegex' => 'false'
+    'iSortCol_0' => '1'
+    'sSortDir_0' => 'desc'
+    'iSortingCols' => '1'
+    'params' => [
+        'orderBy' => 'id'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'oj142p34jhks1th9nqrckktpt7'
+    '_csrf-backend' => '285422993bfcb14284fd1384a88c9e2b72f0f9a1b4e947caf5f6c150d4383816a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"SdVj_5ip1RVsY6W3Barup-n6CCzTHKI1\";}'
+    'PHPSESSID' => 'g6ofqt5fqm7081qg34ke267q20'
+    '_identity' => 'ed2665cba0338e8936194b238d2e040affe5bf0087bc405b2ba2a1ad478d8ac2a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"7tI4c-reUk-NjBfLUmtKPbMDMfH8Jiuz\",2592000]\";}'
+    '_csrf' => 'c0621ee1962cf55868657b5b8623f08fcea75ef9b493857b5f19af8ab7455a86a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LUwtLxmBx0nc3jrUUgoSF8xHQqRvSN57\";}'
+    'ace_settings' => '{\"sidebar-collapsed\":-1}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;D:\\phpSTU\\PHPTutorial\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\MyDrivers\\DriverGenius;C:\\Program Files (x86)\\MyDrivers\\DriverGenius\\ksoft'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpSTU/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1820'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/user/search'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/user/search'
+    'REMOTE_PORT' => '61266'
+    'SCRIPT_FILENAME' => 'D:/www/yii2test/advanced/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/www/yii2test/advanced/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/www/yii2test/advanced/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'yii2testadmin.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'advanced-backend=oj142p34jhks1th9nqrckktpt7; _csrf-backend=285422993bfcb14284fd1384a88c9e2b72f0f9a1b4e947caf5f6c150d4383816a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22SdVj_5ip1RVsY6W3Barup-n6CCzTHKI1%22%3B%7D; PHPSESSID=g6ofqt5fqm7081qg34ke267q20; _identity=ed2665cba0338e8936194b238d2e040affe5bf0087bc405b2ba2a1ad478d8ac2a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%227tI4c-reUk-NjBfLUmtKPbMDMfH8Jiuz%22%2C2592000%5D%22%3B%7D; _csrf=c0621ee1962cf55868657b5b8623f08fcea75ef9b493857b5f19af8ab7455a86a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LUwtLxmBx0nc3jrUUgoSF8xHQqRvSN57%22%3B%7D; ace_settings=%7B%22sidebar-collapsed%22%3A-1%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii2testadmin.com/user/index'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'
+    'HTTP_X_CSRF_TOKEN' => 'RjjUtrzFPeBYqle8dvIAsXYR7nnaQIPLhZ54pS106wYKbaPC8L1QoiCaOd9FmHLkI3aBKpx4-4PU7yrTfjreMQ=='
+    'HTTP_ORIGIN' => 'http://yii2testadmin.com'
+    'CONTENT_LENGTH' => '1443'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'yii2testadmin.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1535958331.8499
+    'REQUEST_TIME' => 1535958331
+]
+2018-09-03 15:16:34 [127.0.0.1][2][hl8tcb980815ofo4j7u8c8fgk4][error][yii\db\Exception] PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'testbendi.hc_wallet' doesn't exist in D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Command.php:1258
+Stack trace:
+#0 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Command.php(1258): PDOStatement->execute()
+#1 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Command.php(1148): yii\db\Command->internalExecute('SELECT COUNT(*)...')
+#2 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Command.php(425): yii\db\Command->queryInternal('fetchColumn', 0)
+#3 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Query.php(463): yii\db\Command->queryScalar()
+#4 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(340): yii\db\Query->queryScalar('COUNT(*)', Object(yii\db\Connection))
+#5 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Query.php(347): yii\db\ActiveQuery->queryScalar('COUNT(*)', Object(yii\db\Connection))
+#6 D:\www\yii2test\advanced\backend\controllers\Controller.php(154): yii\db\Query->count()
+#7 [internal function]: backend\controllers\Controller->actionSearch()
+#8 D:\www\yii2test\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 D:\www\yii2test\advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 D:\www\yii2test\advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('search', Array)
+#11 D:\www\yii2test\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/search', Array)
+#12 D:\www\yii2test\advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 D:\www\yii2test\advanced\backend\web\index.php(20): yii\base\Application->run()
+#14 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'testbendi.hc_wallet' doesn't exist
+The SQL being executed was: SELECT COUNT(*) FROM `hc_user` `u` INNER JOIN `hc_wallet` `w` ON u.id=w.user_id in D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Schema.php:664
+Stack trace:
+#0 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Command.php(1148): yii\db\Command->internalExecute('SELECT COUNT(*)...')
+#2 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Command.php(425): yii\db\Command->queryInternal('fetchColumn', 0)
+#3 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Query.php(463): yii\db\Command->queryScalar()
+#4 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(340): yii\db\Query->queryScalar('COUNT(*)', Object(yii\db\Connection))
+#5 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Query.php(347): yii\db\ActiveQuery->queryScalar('COUNT(*)', Object(yii\db\Connection))
+#6 D:\www\yii2test\advanced\backend\controllers\Controller.php(154): yii\db\Query->count()
+#7 [internal function]: backend\controllers\Controller->actionSearch()
+#8 D:\www\yii2test\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 D:\www\yii2test\advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 D:\www\yii2test\advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('search', Array)
+#11 D:\www\yii2test\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/search', Array)
+#12 D:\www\yii2test\advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 D:\www\yii2test\advanced\backend\web\index.php(20): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'testbendi.hc_wallet' doesn't exist
+)
+
+2018-09-03 15:16:34 [127.0.0.1][2][hl8tcb980815ofo4j7u8c8fgk4][error][yii\db\Exception] yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'testbendi.hc_wallet' doesn't exist
+The SQL being executed was: SELECT COUNT(*) FROM `hc_user` `u` INNER JOIN `hc_wallet` `w` ON u.id=w.user_id in D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Schema.php:664
+Stack trace:
+#0 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Command.php(1148): yii\db\Command->internalExecute('SELECT COUNT(*)...')
+#2 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Command.php(425): yii\db\Command->queryInternal('fetchColumn', 0)
+#3 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Query.php(463): yii\db\Command->queryScalar()
+#4 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(340): yii\db\Query->queryScalar('COUNT(*)', Object(yii\db\Connection))
+#5 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Query.php(347): yii\db\ActiveQuery->queryScalar('COUNT(*)', Object(yii\db\Connection))
+#6 D:\www\yii2test\advanced\backend\controllers\Controller.php(154): yii\db\Query->count()
+#7 [internal function]: backend\controllers\Controller->actionSearch()
+#8 D:\www\yii2test\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 D:\www\yii2test\advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 D:\www\yii2test\advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('search', Array)
+#11 D:\www\yii2test\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/search', Array)
+#12 D:\www\yii2test\advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 D:\www\yii2test\advanced\backend\web\index.php(20): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'testbendi.hc_wallet' doesn't exist
+)
+
+2018-09-03 15:16:33 [127.0.0.1][2][hl8tcb980815ofo4j7u8c8fgk4][info][application] $_GET = []
+
+$_POST = [
+    'sEcho' => '1'
+    'iColumns' => '14'
+    'sColumns' => ',id,avatar,telephone,nickname,sex,money,costed_at,password,repassword,status,created_at,updated_at,'
+    'iDisplayStart' => '0'
+    'iDisplayLength' => '10'
+    'mDataProp_0' => ''
+    'sSearch_0' => ''
+    'bRegex_0' => 'false'
+    'bSearchable_0' => 'true'
+    'bSortable_0' => 'false'
+    'mDataProp_1' => 'id'
+    'sSearch_1' => ''
+    'bRegex_1' => 'false'
+    'bSearchable_1' => 'true'
+    'bSortable_1' => 'true'
+    'mDataProp_2' => 'avatar'
+    'sSearch_2' => ''
+    'bRegex_2' => 'false'
+    'bSearchable_2' => 'true'
+    'bSortable_2' => 'true'
+    'mDataProp_3' => 'telephone'
+    'sSearch_3' => ''
+    'bRegex_3' => 'false'
+    'bSearchable_3' => 'true'
+    'bSortable_3' => 'false'
+    'mDataProp_4' => 'nickname'
+    'sSearch_4' => ''
+    'bRegex_4' => 'false'
+    'bSearchable_4' => 'true'
+    'bSortable_4' => 'false'
+    'mDataProp_5' => 'sex'
+    'sSearch_5' => ''
+    'bRegex_5' => 'false'
+    'bSearchable_5' => 'true'
+    'bSortable_5' => 'false'
+    'mDataProp_6' => 'money'
+    'sSearch_6' => ''
+    'bRegex_6' => 'false'
+    'bSearchable_6' => 'true'
+    'bSortable_6' => 'false'
+    'mDataProp_7' => 'costed_at'
+    'sSearch_7' => ''
+    'bRegex_7' => 'false'
+    'bSearchable_7' => 'true'
+    'bSortable_7' => 'false'
+    'mDataProp_8' => 'password'
+    'sSearch_8' => ''
+    'bRegex_8' => 'false'
+    'bSearchable_8' => 'true'
+    'bSortable_8' => 'false'
+    'mDataProp_9' => 'repassword'
+    'sSearch_9' => ''
+    'bRegex_9' => 'false'
+    'bSearchable_9' => 'true'
+    'bSortable_9' => 'false'
+    'mDataProp_10' => 'status'
+    'sSearch_10' => ''
+    'bRegex_10' => 'false'
+    'bSearchable_10' => 'true'
+    'bSortable_10' => 'false'
+    'mDataProp_11' => 'created_at'
+    'sSearch_11' => ''
+    'bRegex_11' => 'false'
+    'bSearchable_11' => 'true'
+    'bSortable_11' => 'true'
+    'mDataProp_12' => 'updated_at'
+    'sSearch_12' => ''
+    'bRegex_12' => 'false'
+    'bSearchable_12' => 'true'
+    'bSortable_12' => 'true'
+    'mDataProp_13' => ''
+    'sSearch_13' => ''
+    'bRegex_13' => 'false'
+    'bSearchable_13' => 'true'
+    'bSortable_13' => 'false'
+    'sSearch' => ''
+    'bRegex' => 'false'
+    'iSortCol_0' => '1'
+    'sSortDir_0' => 'desc'
+    'iSortingCols' => '1'
+    'params' => [
+        'orderBy' => 'id'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'oj142p34jhks1th9nqrckktpt7'
+    '_csrf-backend' => '285422993bfcb14284fd1384a88c9e2b72f0f9a1b4e947caf5f6c150d4383816a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"SdVj_5ip1RVsY6W3Barup-n6CCzTHKI1\";}'
+    'ace_settings' => '{\"sidebar-collapsed\":-1}'
+    'PHPSESSID' => 'hl8tcb980815ofo4j7u8c8fgk4'
+    '_identity' => 'ed2665cba0338e8936194b238d2e040affe5bf0087bc405b2ba2a1ad478d8ac2a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"7tI4c-reUk-NjBfLUmtKPbMDMfH8Jiuz\",2592000]\";}'
+    '_csrf' => 'dfeea9d776f6703cad0ae97ba9473eaf68b4f96095627af4714d2d9a79f217a5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DGBN30FN_46oSQgovVhbwuPKFEPZ3Bjg\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;D:\\phpSTU\\PHPTutorial\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\MyDrivers\\DriverGenius;C:\\Program Files (x86)\\MyDrivers\\DriverGenius\\ksoft'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpSTU/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1844'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/user/search'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/user/search'
+    'REMOTE_PORT' => '62264'
+    'SCRIPT_FILENAME' => 'D:/www/yii2test/advanced/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/www/yii2test/advanced/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/www/yii2test/advanced/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'yii2testadmin.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'advanced-backend=oj142p34jhks1th9nqrckktpt7; _csrf-backend=285422993bfcb14284fd1384a88c9e2b72f0f9a1b4e947caf5f6c150d4383816a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22SdVj_5ip1RVsY6W3Barup-n6CCzTHKI1%22%3B%7D; ace_settings=%7B%22sidebar-collapsed%22%3A-1%7D; PHPSESSID=hl8tcb980815ofo4j7u8c8fgk4; _identity=ed2665cba0338e8936194b238d2e040affe5bf0087bc405b2ba2a1ad478d8ac2a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%227tI4c-reUk-NjBfLUmtKPbMDMfH8Jiuz%22%2C2592000%5D%22%3B%7D; _csrf=dfeea9d776f6703cad0ae97ba9473eaf68b4f96095627af4714d2d9a79f217a5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22DGBN30FN_46oSQgovVhbwuPKFEPZ3Bjg%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii2testadmin.com/user/index'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_X_CSRF_TOKEN' => 'LfgER6T0WJlKpKTaoM1jcIhVlGhUm-a5p7fEf34AXatpv0YJl8Qe1xWQkrXznAQf_gP8CiPutvLh8pQlTUI3zA=='
+    'HTTP_ORIGIN' => 'http://yii2testadmin.com'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'CONTENT_LENGTH' => '1443'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'yii2testadmin.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1535958993.5163
+    'REQUEST_TIME' => 1535958993
+]
+2018-09-03 15:17:15 [127.0.0.1][2][hl8tcb980815ofo4j7u8c8fgk4][error][yii\db\Exception] PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'testbendi.hc_wallet' doesn't exist in D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Command.php:1258
+Stack trace:
+#0 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Command.php(1258): PDOStatement->execute()
+#1 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Command.php(1148): yii\db\Command->internalExecute('SELECT COUNT(*)...')
+#2 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Command.php(425): yii\db\Command->queryInternal('fetchColumn', 0)
+#3 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Query.php(463): yii\db\Command->queryScalar()
+#4 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(340): yii\db\Query->queryScalar('COUNT(*)', Object(yii\db\Connection))
+#5 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Query.php(347): yii\db\ActiveQuery->queryScalar('COUNT(*)', Object(yii\db\Connection))
+#6 D:\www\yii2test\advanced\backend\controllers\Controller.php(154): yii\db\Query->count()
+#7 [internal function]: backend\controllers\Controller->actionSearch()
+#8 D:\www\yii2test\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 D:\www\yii2test\advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 D:\www\yii2test\advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('search', Array)
+#11 D:\www\yii2test\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/search', Array)
+#12 D:\www\yii2test\advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 D:\www\yii2test\advanced\backend\web\index.php(20): yii\base\Application->run()
+#14 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'testbendi.hc_wallet' doesn't exist
+The SQL being executed was: SELECT COUNT(*) FROM `hc_user` `u` INNER JOIN `hc_wallet` `w` ON u.id=w.user_id in D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Schema.php:664
+Stack trace:
+#0 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Command.php(1148): yii\db\Command->internalExecute('SELECT COUNT(*)...')
+#2 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Command.php(425): yii\db\Command->queryInternal('fetchColumn', 0)
+#3 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Query.php(463): yii\db\Command->queryScalar()
+#4 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(340): yii\db\Query->queryScalar('COUNT(*)', Object(yii\db\Connection))
+#5 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Query.php(347): yii\db\ActiveQuery->queryScalar('COUNT(*)', Object(yii\db\Connection))
+#6 D:\www\yii2test\advanced\backend\controllers\Controller.php(154): yii\db\Query->count()
+#7 [internal function]: backend\controllers\Controller->actionSearch()
+#8 D:\www\yii2test\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 D:\www\yii2test\advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 D:\www\yii2test\advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('search', Array)
+#11 D:\www\yii2test\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/search', Array)
+#12 D:\www\yii2test\advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 D:\www\yii2test\advanced\backend\web\index.php(20): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'testbendi.hc_wallet' doesn't exist
+)
+
+2018-09-03 15:17:15 [127.0.0.1][2][hl8tcb980815ofo4j7u8c8fgk4][error][yii\db\Exception] yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'testbendi.hc_wallet' doesn't exist
+The SQL being executed was: SELECT COUNT(*) FROM `hc_user` `u` INNER JOIN `hc_wallet` `w` ON u.id=w.user_id in D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Schema.php:664
+Stack trace:
+#0 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Command.php(1148): yii\db\Command->internalExecute('SELECT COUNT(*)...')
+#2 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Command.php(425): yii\db\Command->queryInternal('fetchColumn', 0)
+#3 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Query.php(463): yii\db\Command->queryScalar()
+#4 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(340): yii\db\Query->queryScalar('COUNT(*)', Object(yii\db\Connection))
+#5 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Query.php(347): yii\db\ActiveQuery->queryScalar('COUNT(*)', Object(yii\db\Connection))
+#6 D:\www\yii2test\advanced\backend\controllers\Controller.php(154): yii\db\Query->count()
+#7 [internal function]: backend\controllers\Controller->actionSearch()
+#8 D:\www\yii2test\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 D:\www\yii2test\advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 D:\www\yii2test\advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('search', Array)
+#11 D:\www\yii2test\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/search', Array)
+#12 D:\www\yii2test\advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 D:\www\yii2test\advanced\backend\web\index.php(20): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'testbendi.hc_wallet' doesn't exist
+)
+
+2018-09-03 15:17:14 [127.0.0.1][2][hl8tcb980815ofo4j7u8c8fgk4][info][application] $_GET = []
+
+$_POST = [
+    'sEcho' => '1'
+    'iColumns' => '14'
+    'sColumns' => ',id,avatar,telephone,nickname,sex,money,costed_at,password,repassword,status,created_at,updated_at,'
+    'iDisplayStart' => '0'
+    'iDisplayLength' => '10'
+    'mDataProp_0' => ''
+    'sSearch_0' => ''
+    'bRegex_0' => 'false'
+    'bSearchable_0' => 'true'
+    'bSortable_0' => 'false'
+    'mDataProp_1' => 'id'
+    'sSearch_1' => ''
+    'bRegex_1' => 'false'
+    'bSearchable_1' => 'true'
+    'bSortable_1' => 'true'
+    'mDataProp_2' => 'avatar'
+    'sSearch_2' => ''
+    'bRegex_2' => 'false'
+    'bSearchable_2' => 'true'
+    'bSortable_2' => 'true'
+    'mDataProp_3' => 'telephone'
+    'sSearch_3' => ''
+    'bRegex_3' => 'false'
+    'bSearchable_3' => 'true'
+    'bSortable_3' => 'false'
+    'mDataProp_4' => 'nickname'
+    'sSearch_4' => ''
+    'bRegex_4' => 'false'
+    'bSearchable_4' => 'true'
+    'bSortable_4' => 'false'
+    'mDataProp_5' => 'sex'
+    'sSearch_5' => ''
+    'bRegex_5' => 'false'
+    'bSearchable_5' => 'true'
+    'bSortable_5' => 'false'
+    'mDataProp_6' => 'money'
+    'sSearch_6' => ''
+    'bRegex_6' => 'false'
+    'bSearchable_6' => 'true'
+    'bSortable_6' => 'false'
+    'mDataProp_7' => 'costed_at'
+    'sSearch_7' => ''
+    'bRegex_7' => 'false'
+    'bSearchable_7' => 'true'
+    'bSortable_7' => 'false'
+    'mDataProp_8' => 'password'
+    'sSearch_8' => ''
+    'bRegex_8' => 'false'
+    'bSearchable_8' => 'true'
+    'bSortable_8' => 'false'
+    'mDataProp_9' => 'repassword'
+    'sSearch_9' => ''
+    'bRegex_9' => 'false'
+    'bSearchable_9' => 'true'
+    'bSortable_9' => 'false'
+    'mDataProp_10' => 'status'
+    'sSearch_10' => ''
+    'bRegex_10' => 'false'
+    'bSearchable_10' => 'true'
+    'bSortable_10' => 'false'
+    'mDataProp_11' => 'created_at'
+    'sSearch_11' => ''
+    'bRegex_11' => 'false'
+    'bSearchable_11' => 'true'
+    'bSortable_11' => 'true'
+    'mDataProp_12' => 'updated_at'
+    'sSearch_12' => ''
+    'bRegex_12' => 'false'
+    'bSearchable_12' => 'true'
+    'bSortable_12' => 'true'
+    'mDataProp_13' => ''
+    'sSearch_13' => ''
+    'bRegex_13' => 'false'
+    'bSearchable_13' => 'true'
+    'bSortable_13' => 'false'
+    'sSearch' => ''
+    'bRegex' => 'false'
+    'iSortCol_0' => '1'
+    'sSortDir_0' => 'desc'
+    'iSortingCols' => '1'
+    'params' => [
+        'orderBy' => 'id'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'oj142p34jhks1th9nqrckktpt7'
+    '_csrf-backend' => '285422993bfcb14284fd1384a88c9e2b72f0f9a1b4e947caf5f6c150d4383816a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"SdVj_5ip1RVsY6W3Barup-n6CCzTHKI1\";}'
+    'ace_settings' => '{\"sidebar-collapsed\":-1}'
+    'PHPSESSID' => 'hl8tcb980815ofo4j7u8c8fgk4'
+    '_identity' => 'ed2665cba0338e8936194b238d2e040affe5bf0087bc405b2ba2a1ad478d8ac2a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"7tI4c-reUk-NjBfLUmtKPbMDMfH8Jiuz\",2592000]\";}'
+    '_csrf' => 'dfeea9d776f6703cad0ae97ba9473eaf68b4f96095627af4714d2d9a79f217a5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DGBN30FN_46oSQgovVhbwuPKFEPZ3Bjg\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;D:\\phpSTU\\PHPTutorial\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\MyDrivers\\DriverGenius;C:\\Program Files (x86)\\MyDrivers\\DriverGenius\\ksoft'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpSTU/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1844'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/user/search'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/user/search'
+    'REMOTE_PORT' => '62330'
+    'SCRIPT_FILENAME' => 'D:/www/yii2test/advanced/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/www/yii2test/advanced/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/www/yii2test/advanced/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'yii2testadmin.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'advanced-backend=oj142p34jhks1th9nqrckktpt7; _csrf-backend=285422993bfcb14284fd1384a88c9e2b72f0f9a1b4e947caf5f6c150d4383816a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22SdVj_5ip1RVsY6W3Barup-n6CCzTHKI1%22%3B%7D; ace_settings=%7B%22sidebar-collapsed%22%3A-1%7D; PHPSESSID=hl8tcb980815ofo4j7u8c8fgk4; _identity=ed2665cba0338e8936194b238d2e040affe5bf0087bc405b2ba2a1ad478d8ac2a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%227tI4c-reUk-NjBfLUmtKPbMDMfH8Jiuz%22%2C2592000%5D%22%3B%7D; _csrf=dfeea9d776f6703cad0ae97ba9473eaf68b4f96095627af4714d2d9a79f217a5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22DGBN30FN_46oSQgovVhbwuPKFEPZ3Bjg%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii2testadmin.com/user/index'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_X_CSRF_TOKEN' => 'lmYU0E3oM0tGdU5dIniT2HrGM-qzF84B84QFCqvJPUHSIVaefth1BRlBeDJxKfS3DJBbiMRinkq1wVVQmItXJg=='
+    'HTTP_ORIGIN' => 'http://yii2testadmin.com'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'CONTENT_LENGTH' => '1443'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'yii2testadmin.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1535959034.8215
+    'REQUEST_TIME' => 1535959034
+]
+2018-09-03 15:39:38 [127.0.0.1][2][00oi4kj7sd37niv1h1hvc3c4b4][error][yii\db\Exception] PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'testbendi.hc_wallet' doesn't exist in D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Command.php:1258
+Stack trace:
+#0 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Command.php(1258): PDOStatement->execute()
+#1 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Command.php(1148): yii\db\Command->internalExecute('SELECT COUNT(*)...')
+#2 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Command.php(425): yii\db\Command->queryInternal('fetchColumn', 0)
+#3 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Query.php(463): yii\db\Command->queryScalar()
+#4 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(340): yii\db\Query->queryScalar('COUNT(*)', Object(yii\db\Connection))
+#5 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Query.php(347): yii\db\ActiveQuery->queryScalar('COUNT(*)', Object(yii\db\Connection))
+#6 D:\www\yii2test\advanced\backend\controllers\Controller.php(154): yii\db\Query->count()
+#7 [internal function]: backend\controllers\Controller->actionSearch()
+#8 D:\www\yii2test\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 D:\www\yii2test\advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 D:\www\yii2test\advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('search', Array)
+#11 D:\www\yii2test\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/search', Array)
+#12 D:\www\yii2test\advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 D:\www\yii2test\advanced\backend\web\index.php(20): yii\base\Application->run()
+#14 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'testbendi.hc_wallet' doesn't exist
+The SQL being executed was: SELECT COUNT(*) FROM `hc_user` `u` INNER JOIN `hc_wallet` `w` ON u.id=w.user_id in D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Schema.php:664
+Stack trace:
+#0 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Command.php(1148): yii\db\Command->internalExecute('SELECT COUNT(*)...')
+#2 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Command.php(425): yii\db\Command->queryInternal('fetchColumn', 0)
+#3 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Query.php(463): yii\db\Command->queryScalar()
+#4 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(340): yii\db\Query->queryScalar('COUNT(*)', Object(yii\db\Connection))
+#5 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Query.php(347): yii\db\ActiveQuery->queryScalar('COUNT(*)', Object(yii\db\Connection))
+#6 D:\www\yii2test\advanced\backend\controllers\Controller.php(154): yii\db\Query->count()
+#7 [internal function]: backend\controllers\Controller->actionSearch()
+#8 D:\www\yii2test\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 D:\www\yii2test\advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 D:\www\yii2test\advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('search', Array)
+#11 D:\www\yii2test\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/search', Array)
+#12 D:\www\yii2test\advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 D:\www\yii2test\advanced\backend\web\index.php(20): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'testbendi.hc_wallet' doesn't exist
+)
+
+2018-09-03 15:39:38 [127.0.0.1][2][00oi4kj7sd37niv1h1hvc3c4b4][error][yii\db\Exception] yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'testbendi.hc_wallet' doesn't exist
+The SQL being executed was: SELECT COUNT(*) FROM `hc_user` `u` INNER JOIN `hc_wallet` `w` ON u.id=w.user_id in D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Schema.php:664
+Stack trace:
+#0 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Command.php(1148): yii\db\Command->internalExecute('SELECT COUNT(*)...')
+#2 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Command.php(425): yii\db\Command->queryInternal('fetchColumn', 0)
+#3 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Query.php(463): yii\db\Command->queryScalar()
+#4 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(340): yii\db\Query->queryScalar('COUNT(*)', Object(yii\db\Connection))
+#5 D:\www\yii2test\advanced\vendor\yiisoft\yii2\db\Query.php(347): yii\db\ActiveQuery->queryScalar('COUNT(*)', Object(yii\db\Connection))
+#6 D:\www\yii2test\advanced\backend\controllers\Controller.php(154): yii\db\Query->count()
+#7 [internal function]: backend\controllers\Controller->actionSearch()
+#8 D:\www\yii2test\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 D:\www\yii2test\advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 D:\www\yii2test\advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('search', Array)
+#11 D:\www\yii2test\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/search', Array)
+#12 D:\www\yii2test\advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 D:\www\yii2test\advanced\backend\web\index.php(20): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'testbendi.hc_wallet' doesn't exist
+)
+
+2018-09-03 15:39:37 [127.0.0.1][2][00oi4kj7sd37niv1h1hvc3c4b4][info][application] $_GET = []
+
+$_POST = [
+    'sEcho' => '1'
+    'iColumns' => '14'
+    'sColumns' => ',id,avatar,telephone,nickname,sex,money,costed_at,password,repassword,status,created_at,updated_at,'
+    'iDisplayStart' => '0'
+    'iDisplayLength' => '10'
+    'mDataProp_0' => ''
+    'sSearch_0' => ''
+    'bRegex_0' => 'false'
+    'bSearchable_0' => 'true'
+    'bSortable_0' => 'false'
+    'mDataProp_1' => 'id'
+    'sSearch_1' => ''
+    'bRegex_1' => 'false'
+    'bSearchable_1' => 'true'
+    'bSortable_1' => 'true'
+    'mDataProp_2' => 'avatar'
+    'sSearch_2' => ''
+    'bRegex_2' => 'false'
+    'bSearchable_2' => 'true'
+    'bSortable_2' => 'true'
+    'mDataProp_3' => 'telephone'
+    'sSearch_3' => ''
+    'bRegex_3' => 'false'
+    'bSearchable_3' => 'true'
+    'bSortable_3' => 'false'
+    'mDataProp_4' => 'nickname'
+    'sSearch_4' => ''
+    'bRegex_4' => 'false'
+    'bSearchable_4' => 'true'
+    'bSortable_4' => 'false'
+    'mDataProp_5' => 'sex'
+    'sSearch_5' => ''
+    'bRegex_5' => 'false'
+    'bSearchable_5' => 'true'
+    'bSortable_5' => 'false'
+    'mDataProp_6' => 'money'
+    'sSearch_6' => ''
+    'bRegex_6' => 'false'
+    'bSearchable_6' => 'true'
+    'bSortable_6' => 'false'
+    'mDataProp_7' => 'costed_at'
+    'sSearch_7' => ''
+    'bRegex_7' => 'false'
+    'bSearchable_7' => 'true'
+    'bSortable_7' => 'false'
+    'mDataProp_8' => 'password'
+    'sSearch_8' => ''
+    'bRegex_8' => 'false'
+    'bSearchable_8' => 'true'
+    'bSortable_8' => 'false'
+    'mDataProp_9' => 'repassword'
+    'sSearch_9' => ''
+    'bRegex_9' => 'false'
+    'bSearchable_9' => 'true'
+    'bSortable_9' => 'false'
+    'mDataProp_10' => 'status'
+    'sSearch_10' => ''
+    'bRegex_10' => 'false'
+    'bSearchable_10' => 'true'
+    'bSortable_10' => 'false'
+    'mDataProp_11' => 'created_at'
+    'sSearch_11' => ''
+    'bRegex_11' => 'false'
+    'bSearchable_11' => 'true'
+    'bSortable_11' => 'true'
+    'mDataProp_12' => 'updated_at'
+    'sSearch_12' => ''
+    'bRegex_12' => 'false'
+    'bSearchable_12' => 'true'
+    'bSortable_12' => 'true'
+    'mDataProp_13' => ''
+    'sSearch_13' => ''
+    'bRegex_13' => 'false'
+    'bSearchable_13' => 'true'
+    'bSortable_13' => 'false'
+    'sSearch' => ''
+    'bRegex' => 'false'
+    'iSortCol_0' => '1'
+    'sSortDir_0' => 'desc'
+    'iSortingCols' => '1'
+    'params' => [
+        'orderBy' => 'id'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'oj142p34jhks1th9nqrckktpt7'
+    '_csrf-backend' => '285422993bfcb14284fd1384a88c9e2b72f0f9a1b4e947caf5f6c150d4383816a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"SdVj_5ip1RVsY6W3Barup-n6CCzTHKI1\";}'
+    'ace_settings' => '{\"sidebar-collapsed\":-1}'
+    'PHPSESSID' => '00oi4kj7sd37niv1h1hvc3c4b4'
+    '_identity' => 'ed2665cba0338e8936194b238d2e040affe5bf0087bc405b2ba2a1ad478d8ac2a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"7tI4c-reUk-NjBfLUmtKPbMDMfH8Jiuz\",2592000]\";}'
+    '_csrf' => '0f11a7357f03a1fc318cc545573f86baf3048e11c5ca896061f2d462c045ba5ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"QShtDSas-vO1-90Xw3K-yJL0cBcZTakQ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;D:\\phpSTU\\PHPTutorial\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\MyDrivers\\DriverGenius;C:\\Program Files (x86)\\MyDrivers\\DriverGenius\\ksoft'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpSTU/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1832'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/user/search'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/user/search'
+    'REMOTE_PORT' => '64244'
+    'SCRIPT_FILENAME' => 'D:/www/yii2test/advanced/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/www/yii2test/advanced/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/www/yii2test/advanced/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'yii2testadmin.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'advanced-backend=oj142p34jhks1th9nqrckktpt7; _csrf-backend=285422993bfcb14284fd1384a88c9e2b72f0f9a1b4e947caf5f6c150d4383816a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22SdVj_5ip1RVsY6W3Barup-n6CCzTHKI1%22%3B%7D; ace_settings=%7B%22sidebar-collapsed%22%3A-1%7D; PHPSESSID=00oi4kj7sd37niv1h1hvc3c4b4; _identity=ed2665cba0338e8936194b238d2e040affe5bf0087bc405b2ba2a1ad478d8ac2a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%227tI4c-reUk-NjBfLUmtKPbMDMfH8Jiuz%22%2C2592000%5D%22%3B%7D; _csrf=0f11a7357f03a1fc318cc545573f86baf3048e11c5ca896061f2d462c045ba5ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22QShtDSas-vO1-90Xw3K-yJL0cBcZTakQ%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://yii2testadmin.com/user/index'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'
+    'HTTP_X_CSRF_TOKEN' => 'qsyBXg5w-fE5jJUwP04355ENk7DsTYcBWiag9ld-OjH7n-kqSiOYghT62gESdwe_5j7YnZUHyzE5ZMOsAx9RYA=='
+    'HTTP_ORIGIN' => 'http://yii2testadmin.com'
+    'CONTENT_LENGTH' => '1443'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'yii2testadmin.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1535960377.7005
+    'REQUEST_TIME' => 1535960377
+]

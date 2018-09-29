@@ -1,0 +1,82 @@
+@charset 'utf-8';
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: #333;
+  font-family: "microsoft yahei";
+}
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+button,
+p,
+blockquote,
+th,
+td,
+address span a {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+ol li,
+ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #369;
+}
+img {
+  border: 0;
+}
+.c {
+  overflow: hidden;
+  height: 0;
+  font-size: 0;
+  clear: both;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.none {
+  display: none;
+}
+* html .clearfix,
+:first-child + html .clearfix {
+  zoom: 1;
+}
+html,
+body {
+  margin: 0 auto;
+  padding: 0;
+  background: #eee;
+  width: 100%;
+  max-width: 640px;
+}
+.main {
+  background: #fff;
+  width: 100%;
+  padding:10px 10px 55px 10px;
+}
